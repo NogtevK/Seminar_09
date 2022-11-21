@@ -5,7 +5,17 @@ M = 4; N = 8. -> "4, 5, 6, 7, 8"
 M = 8; N = 4. -> "8, 7, 6, 5, 4" */
 
 
-
+void Rec(int n, int m)
+{
+    if (n < m)
+    {
+        return;
+    }
+    Rec((n - 1), m);
+    Console.Write(n + " ");
+}
+int M = 4, N = 5;
+Rec(N, M);
 
 
 
